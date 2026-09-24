@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Solicitudes de Alta de Ítems</title>
+
+    <style>
+        body{
+margin:0;
+padding:30px;
+font-family:Segoe UI, sans-serif;
+background:#f4f6f8;
+}
+.contenedor{
+max-width:1200px;
+margin:auto;
+}
+h1{
+color:#1f2e70;
+}
+.filtros{
+display:flex;
+gap:15px;
+margin-bottom:20px;
+}
+.filtros input,
+.filtros select{
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+table{
+width:100%;
+border-collapse:collapse;
+background:#fff;
+}
+thead{
+background:#1f2e70;
+color:white;
+}
+th, td{
+padding:12px;
+text-align:left;
+}
+tr:nth-child(even){
+background:#f5f5f5;
+}
+button{
+background:#28a745;
+border:none;
+color:white;
+padding:8px 12px;
+border-radius:5px;
+cursor:pointer;
+}
+
+    </style>    
+
+<body>
+<div class="contenedor">
+<h1>Reporte de Solicitudes de Alta de Ítems</h1>
+<div class="filtros">
+<input type="text" placeholder="Buscar solicitud">
+<select>
+<option>Todas las Familias</option>
+<option>Empaque</option>
+<option>Doble Cara</option>
+<option>Folios</option>
+</select>
+<select>
+<option>Todos los estados</option>
+<option>Pendiente</option>
+<option>Aprobado</option>
+<option>Rechazado</option>
+</select>
+<select>
+<option>Todos los solicitantes</option>
+<option>Solicitud 1</option>
+<option>Solicitud 2</option>
+<option>Solicitud 3</option>
+</select>
+</div>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Clave</th>
+<th>Descripción</th>
+<th>Marca</th>
+<th>Familia</th>
+<th>Estado</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21/09/2026</td>
+<td>A1001</td>
+<td>Cinta Transparente</td>
+<td>3M</td>
+<td>Empaque</td>
+<td>Pendiente</td>
+<td>
+<button>Ver</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+
+

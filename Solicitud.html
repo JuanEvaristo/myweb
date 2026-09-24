@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detalle de Solicitud</title>
+
+<style>
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f4f6f9;
+    padding:30px;
+}
+
+.contenedor{
+    max-width:1000px;
+    margin:auto;
+}
+
+.titulo{
+    background:#1f2d6b;
+    color:white;
+    padding:20px;
+    border-radius:10px 10px 0 0;
+}
+
+.titulo h1{
+    margin:0;
+}
+
+.tarjeta{
+    background:white;
+    border-radius:0 0 10px 10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    padding:30px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.campo{
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:15px;
+    background:#fafafa;
+}
+
+.label{
+    font-size:13px;
+    color:#666;
+    margin-bottom:5px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+.valor{
+    font-size:18px;
+    color:#222;
+}
+
+.comentarios{
+    margin-top:25px;
+}
+
+.comentarios .contenido{
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:20px;
+    min-height:120px;
+}
+
+.estatus{
+    display:inline-block;
+    background:#ffc107;
+    color:#000;
+    padding:6px 15px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.botonera{
+    margin-top:30px;
+    text-align:right;
+}
+
+.btn{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    color:white;
+    font-size:16px;
+    margin-left:10px;
+}
+
+.btn-regresar{
+    background:#6c757d;
+}
+
+.btn-aprobar{
+    background:#28a745;
+}
+
+.btn-rechazar{
+    background:#dc3545;
+}
+
+@media(max-width:768px){
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="contenedor">
+
+    <div class="titulo">
+        <h1>Solicitud #ALT-20260921-001</h1>
+    </div>
+
+    <div class="tarjeta">
+
+        <div class="info-grid">
+
+            <div class="campo">
+                <div class="label">Fecha de Solicitud</div>
+                <div class="valor">21/09/2026</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Solicitante</div>
+                <div class="valor">Juan Antonio Evaristo</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Clave</div>
+                <div class="valor">A1001</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Descripción</div>
+                <div class="valor">Cinta Transparente 48mm x 150m</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Marca</div>
+                <div class="valor">3M</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Largo / Ancho</div>
+                <div class="valor">48mm x 150m</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Clave SAT</div>
+                <div class="valor">31201512</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Clave Unidad SAT</div>
+                <div class="valor">H87</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Familia</div>
+                <div class="valor">Empaque</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Subfamilia</div>
+                <div class="valor">Cintas Adhesivas</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Unidad de Medida</div>
+                <div class="valor">Pieza</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Piezas por Caja</div>
+                <div class="valor">36</div>
+            </div>
+
+            <div class="campo">
+                <div class="label">Estado</div>
+                <div class="valor">
+                    <span class="estatus">Pendiente</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="comentarios">
+            <div class="label">Comentarios</div>
+
+            <div class="contenido">
+                Solicito la creación de esta clave para incorporación
+                al catálogo de productos debido al ingreso de una nueva
+                línea comercial.
+            </div>
+        </div>
+
+        <div class="botonera">
+            <button class="btn btn-regresar">Regresar</button>
+            <button class="btn btn-aprobar">Aprobar</button>
+            <button class="btn btn-rechazar">Rechazar</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
